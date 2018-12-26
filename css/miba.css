@@ -1,0 +1,475 @@
+#mainNav {
+  min-height: 56px;
+  background-color: #fff;
+}
+
+#mainNav .toggler {
+  font-size: 80%;
+  padding: 0.75rem;
+  color: #64a19d;
+  border: 1px solid #64a19d;
+}
+
+#mainNav .navbar-toggler:focus {
+  outline: none;
+}
+
+#mainNav .navbar-brand {
+  color: #161616;
+  font-weight: 700;
+  padding: .9rem 0;
+}
+
+#mainNav .navbar-nav .nav-item:hover {
+  color: fade(white, 80%);
+  outline: none;
+  background-color: transparent;
+}
+
+#mainNav .navbar-nav .nav-item:active, #mainNav .navbar-nav .nav-item:focus {
+  outline: none;
+  background-color: transparent;
+}
+
+@media (min-width: 992px) {
+  #mainNav {
+    padding-top: 0;
+    padding-bottom: 0;
+    border-bottom: none;
+    background-color: transparent;
+    -webkit-transition: background-color 0.3s ease-in-out;
+    transition: background-color 0.3s ease-in-out;
+  }
+  #mainNav .navbar-brand {
+    padding: .5rem 0;
+    color: rgba(255, 255, 255, 0.5);
+  }
+  #mainNav .nav-link {
+    -webkit-transition: none;
+    transition: none;
+    padding: 2rem 1.5rem;
+    color: rgba(255, 255, 255, 0.5);
+  }
+  #mainNav .nav-link:hover {
+    color: rgba(255, 255, 255, 0.75);
+  }
+  #mainNav .nav-link:active {
+    color: white;
+  }
+  #mainNav.navbar-shrink {
+    background-color: #fff;
+  }
+  #mainNav.navbar-shrink .navbar-brand {
+    color: #161616;
+  }
+  #mainNav.navbar-shrink .nav-link {
+    color: #161616;
+    padding: 1.5rem 1.5rem 1.25rem;
+    border-bottom: 0.25rem solid transparent;
+  }
+  #mainNav.navbar-shrink .nav-link:hover {
+    color: #64a19d;
+  }
+  #mainNav.navbar-shrink .nav-link:active {
+    color: #467370;
+  }
+  #mainNav.navbar-shrink .nav-link.active {
+    color: #64a19d;
+    outline: none;
+    border-bottom: 0.25rem solid #64a19d;
+  }
+}
+
+.masthead {
+  position: relative;
+  width: 100%;
+  height: auto;
+  min-height: 35rem;
+  padding: 15rem 0;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 230, 0, 0.1)), color-stop(75%, rgba(82, 94, 97, 0.5)), to(#161616)), url("../img/bg-masthead.jpg");
+  background: linear-gradient(to bottom, rgba(29, 29, 29, 0.1) 0%, rgba(31, 31, 31, 0.5) 75%, #E7CB63 150%), url("http://www.baomichelle.com/uploads/9/7/2/2/97227502/concept01_orig.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+}
+
+.masthead h1 {
+  font-family: 'Varela Round';
+  font-size: 2.5rem;
+  line-height: 2.5rem;
+  letter-spacing: 0.8rem;
+  background: -webkit-linear-gradient(rgba(255, 230, 0, 1), rgba(127, 155, 255, .1));
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+
+#grad1 {
+  background: red;
+  background: -webkit-linear-gradient(left, orange , yellow, green, cyan, blue, violet);
+  background: -o-linear-gradient(right, orange, yellow, green, cyan, blue, violet);
+  background: -moz-linear-gradient(right, orange, yellow, green, cyan, blue, violet);
+  background: linear-gradient(to right, orange , yellow, green, cyan, blue, violet);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 20vw;
+}
+
+.masthead h2 {
+  max-width: 20rem;
+  font-size: 1rem;
+}
+
+@media (min-width: 768px) {
+  .masthead h1 {
+    font-size: 4rem;
+    line-height: 4rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .masthead {
+    height: 100vh;
+    padding: 0;
+  }
+  .masthead h1 {
+    font-size: 6.5rem;
+    line-height: 6.5rem;
+    letter-spacing: 0.8rem;
+  }
+  .masthead h2 {
+    max-width: 30rem;
+    font-size: 1.25rem;
+  }
+}
+
+a {text-decoration: none;}
+a .fa{
+    padding: 10px 15px;
+}
+
+a .fa-instagram{ color: #000000;}
+    a .fa-instagram:hover { background-color: transparent;}
+a .fa-linkedin{ color: rgb(0, 0, 0);}
+    a .fa-linkedin:hover { background-color: transparent;}
+a .fa-vimeo{ color: #000000;}
+    a .fa-vimeo:hover { background-color: transparent;}
+
+
+a .fa:hover{
+    color: white;
+}
+
+.btn {
+  padding: .5rem .5rem;
+  font-family: 'Varela Round';
+  font-size: 80%;
+  text-transform: uppercase;
+  letter-spacing: .15rem;
+  border: 0;
+}
+
+.btn-primary {
+  background-color: transparent;
+}
+
+.btn-primary:hover {
+  background-color: #4f837f;
+}
+
+.btn-primary:focus {
+  background-color: #4f837f;
+  color: white;
+}
+
+.btn-primary:active {
+  background-color: #467370 !important;
+}
+
+.about-section {
+  padding-top: 10rem;
+  background: -webkit-gradient(linear, left top, left bottom, from(#E7CB63 150%), color-stop(75%, #E7CB63), to(#E7CB63));
+  background: linear-gradient(to bottom, #E7CB63 -70%, rgba(243, 224, 226) 75%);
+}
+
+.about-section p {
+  margin-bottom: 5rem;
+}
+
+.projects-section {
+  padding: 10rem 0;
+}
+
+.projects-section .featured-text {
+  padding: 2rem;
+}
+
+@media (min-width: 992px) {
+  .projects-section .featured-text {
+    padding: 0 0 0 2rem;
+    border-left: 0.5rem solid #64a19d;
+  }
+}
+
+.projects-section .project-text {
+  padding: 3rem;
+  font-size: 90%;
+}
+
+@media (min-width: 992px) {
+  .projects-section .project-text {
+    padding: 5rem;
+  }
+  .projects-section .project-text hr {
+    border-color: #64a19d;
+    border-width: .25rem;
+    width: 30%;
+  }
+}
+
+/* ********* SASS EXTENDS  ********* */
+
+/* ********* SASS FUNCTIONS ********* */
+/* ********* SASS MIXINS ********* */
+/* ********* STYLES  ********* */
+* {
+  margin: 0;
+  padding: 0;
+  max-width: 100%;
+  
+}
+html, body {
+  height: 100%;
+}
+
+h1{
+  padding: 2rem;
+  float: center;
+  font-family: 'Varela Round';
+  font-size: 4.5rem;
+  line-height: 2.5rem;
+  letter-spacing: 0.8rem;
+  background: -webkit-linear-gradient(#E7CB63, rgb(0, 0, 0, .4));
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+
+h2 {
+  font-weight: 400;
+}
+.copyright {
+  font-style: italic;
+}
+.content {
+  text-align: center;
+}
+p {
+  margin-bottom: 0.375em;
+}
+ul {
+  margin-bottom: 1em;
+  list-style: none;
+  display: flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  justify-content: space-around;
+}
+/* FILTERS */
+.button {
+  text-align: center;
+  display: block;
+  width: 100%;
+  border-color: transparent;
+  margin-top: 5em;
+  margin-bottom: 1em;
+  font-family: 'Asap', sans-serif;
+}
+button {
+  float: center;
+  margin: 0.5em;
+  padding: 0.5em;
+  border-color: transparent;
+  color: #393838;
+  background: none;
+  font-size: 0.7em;
+  text-transform: uppercase;
+  font-size: 0.875em;
+}
+button.is-active {
+  background: #393838;
+  color: #fff;
+}
+/* LIST */
+.list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  margin-bottom: 20em;
+}
+.list__item {
+  display: block;
+  width: 100%;
+  height: 18em;
+  overflow: hidden;
+  margin-bottom: 1em;
+  text-align: center;
+  font-size: 1em;
+  text-transform: uppercase;
+  color: white;
+  
+}
+.list__item__title {
+  display: block;
+  margin-top: 30%;
+}
+@media screen and (min-width: 600px) {
+  .list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .list__item {
+    width: calc(33% - 1em);
+    margin-right: 1em;
+  }
+  .list__item:nth-child(3n) {
+    clear: left;
+  }
+  .list__item:nth-child(-n+2) {
+    margin-top: 0;
+  }
+}
+@media screen and (min-width: 768px) {
+  button {
+    margin: 0.5em;
+    padding: 0.5em;
+  }
+  .list__item {
+    width: calc(20% - 1em);
+  }
+  .list__item:nth-child(2n) {
+    margin-right: 1em;
+  }
+  .list__item:nth-child(3n) {
+    clear: none;
+    margin-right: 0;
+  }
+  .list__item:nth-child(4n) {
+    clear: left;
+  }
+  .list__item:nth-child(-n+3) {
+    margin-top: 0;
+  }
+}
+
+
+
+.signup-section {
+  padding: 10rem 0;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(22, 22, 22, 0.1)), color-stop(75%, rgba(22, 22, 22, 0.5)), to(#161616)), url("http://www.baomichelle.com/uploads/9/7/2/2/97227502/published/mountain01.png?1537945288");
+  background: linear-gradient(to bottom, rgba(22, 22, 22, 0.1) 0%, rgba(22, 22, 22, 0.5) 75%, #161616 100%), url("http://www.baomichelle.com/uploads/9/7/2/2/97227502/published/mountain01.png?1537945288");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+}
+
+.signup-section .form-inline input {
+  -webkit-box-shadow: 0 0.1875rem 0.1875rem 0 rgba(0, 0, 0, 0.1) !important;
+  box-shadow: 0 0.1875rem 0.1875rem 0 rgba(0, 0, 0, 0.1) !important;
+  padding: 1.25rem 2rem;
+  height: auto;
+  font-family: 'Varela Round';
+  font-size: 80%;
+  text-transform: uppercase;
+  letter-spacing: 0.15rem;
+  border: 0;
+}
+
+.contact-section {
+  padding: 5rem 0 0;
+  float: center;
+  
+}
+
+.contact-section .card {
+  float: center;
+  position: relative;
+  left: 350px;
+  border: 0;
+  border-bottom: 0.25rem solid #64a19d;
+  
+}
+
+.contact-section .card h4 {
+  font-size: 0.8rem;
+  font-family: 'Varela Round';
+  text-transform: uppercase;
+  letter-spacing: 0.15rem;
+}
+
+.contact-section .card hr {
+  border-color: #64a19d;
+  border-width: 0.25rem;
+  width: 3rem;
+}
+
+.contact-section .social {
+  margin-top: 5rem;
+}
+
+.contact-section .social a {
+  text-align: center;
+  height: 3rem;
+  width: 3rem;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 100%;
+  line-height: 3rem;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.contact-section .social a:hover {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.contact-section .social a:active {
+  color: #fff;
+}
+
+body {
+  font-family: 'Nunito';
+  letter-spacing: 0.0625em;
+}
+
+a {
+  color: #64a19d;
+}
+
+a:focus, a:hover {
+  text-decoration: none;
+  color: #3c6360;
+}
+
+.bg-black {
+  background-color: #161616 !important;
+}
+
+.bg-primary {
+  background-color: #64a19d !important;
+}
+
+.text-primary {
+  color: #64a19d !important;
+}
+
+footer {
+  padding: 5rem 0;
+}
+
+
+* { box-sizing: border-box; }
+
+body {
+  font-family: sans-serif;
+}
+
