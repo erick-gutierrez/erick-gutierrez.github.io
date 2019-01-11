@@ -39,6 +39,30 @@
   // Collapse the navbar when page is scrolled
   $(window).scroll(navbarCollapse);
 
+  /* When the user scrolls down, hide the navbar. When the user scrolls up, show the navbar */
+var prevScrollpos = window.pageYOffset;
+window.onscroll = function() {
+  var currentScrollPos = window.pageYOffset;
+  if (prevScrollpos > currentScrollPos) {
+    document.getElementById("navbar").style.top = "0";
+  } else {
+    document.getElementById("navbar").style.top = "-50px";
+  }
+  prevScrollpos = currentScrollPos;
+}
+  
+  //alt collapse scroll from stackoverflow because main isn't working
+  $(window).scroll(function() {
+    if ($(document).scrollTop() > 50) {
+      $('nav').addClass('shrink');
+    } else {
+      $('nav').removeClass('shrink');
+    }
+  });
+
+
+ 
+
   
 //need this to deactivate lightbox on small screens
 $(document).ready(function () {
@@ -110,6 +134,51 @@ $(document).ready(function(){
   });
 });
 
+$("#list").click(function() {
+  $(this).attr('width', '400');
+   $(this).attr('height', '300');
+});
+
+// CLICK TO ENLARGE IMAGES SCRIPT
+
+$(document).ready(function() {
+
+	/* This is basic - uses default settings */
+	
+	$("a#single_image").fancybox();
+	
+	/* Using custom settings */
+	
+	$("a#inline").fancybox({
+		'hideOnContentClick': true
+	});
+
+	/* Apply fancybox to multiple items */
+	
+	$("a.group").fancybox({
+		'transitionIn'	:	'elastic',
+		'transitionOut'	:	'elastic',
+		'speedIn'		:	600, 
+		'speedOut'		:	200, 
+		'overlayShow'	:	false
+	});
+	
+});
+        $("a.grouped_elements").fancybox();
+    
+        $('[data-fancybox="gallery"]').fancybox({
+          // Options will go here
+        });
+
+        $(document).ready(function() {
+          $(".fancybox-media").fancybox({
+              openEffect  : 'none',
+              closeEffect : 'none',
+              helpers : {
+                  media : {}
+              }
+          });
+      });
 
 })(jQuery); // End of use strict
 

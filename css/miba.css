@@ -1,6 +1,6 @@
 #mainNav {
   min-height: 56px;
-  background-color: #fff;
+  background-color: #fffff8;
 }
 
 #mainNav .toggler {
@@ -24,6 +24,7 @@
   color: fade(white, 80%);
   outline: none;
   background-color: transparent;
+  visibility: visible;
 }
 
 #mainNav .navbar-nav .nav-item:active, #mainNav .navbar-nav .nav-item:focus {
@@ -52,15 +53,26 @@
   }
   #mainNav .nav-link:hover {
     color: rgba(255, 255, 255, 0.75);
+
   }
   #mainNav .nav-link:active {
     color: white;
   }
   #mainNav.navbar-shrink {
-    background-color: #fff;
+    opacity: 0;
+    transition: .2s;
+    background: #fffff8;
   }
+
+  #mainNav.navbar-shrink:hover{
+    opacity: 1;
+    transition: .2s;
+    background: #fffff8;
+  }
+
   #mainNav.navbar-shrink .navbar-brand {
-    color: #161616;
+    color: white;
+    
   }
   #mainNav.navbar-shrink .nav-link {
     color: #161616;
@@ -188,8 +200,9 @@ a .fa:hover{
 
 .about-section {
   padding-top: 10rem;
-  background: -webkit-gradient(linear, left top, left bottom, from(#E7CB63 150%), color-stop(75%, #E7CB63), to(#E7CB63));
-  background: linear-gradient(to bottom, #E7CB63 -70%, rgba(243, 224, 226) 75%);
+  background: #fffff8;
+  /* background: -webkit-gradient(linear, left top, left bottom, from(#E7CB63 150%), color-stop(75%, #E7CB63), to(#E7CB63));
+  background: linear-gradient(to bottom, #E7CB63 -70%, rgba(243, 224, 226) 75%); */
 }
 
 .about-section p {
@@ -450,8 +463,16 @@ a:focus, a:hover {
   color: #3c6360;
 }
 
+.bg-offwhite{
+  background-color: #fffff8 !important;
+}
+
 .bg-black {
   background-color: #161616 !important;
+}
+
+.bg-trans {
+  background-color: transparent;
 }
 
 .bg-primary {
